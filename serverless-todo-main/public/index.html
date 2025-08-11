@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-framework="react">
+	<head>
+		<meta charset="utf-8">
+		<title>Serverless • React • TodoMVC</title>
+		<link rel="stylesheet" href="{{base_path}}node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="{{base_path}}node_modules/todomvc-app-css/index.css">
+		<link rel="shortcut icon" href="{{base_path}}favicon.ico" />
+		<script type="text/javascript">BASE_PATH = "{{base_path}}";</script>
+	</head>
+	<body>
+		<section class="todoapp"></section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>designed by Aiswarya for checking Serverless arhitecture for diff metrices.</p>
+		</footer>
+
+		<script src="{{base_path}}node_modules/todomvc-common/base.js"></script>
+		<script src="{{base_path}}node_modules/react/dist/react-with-addons.js"></script>
+		<script src="{{base_path}}node_modules/classnames/index.js"></script>
+		<script src="{{base_path}}node_modules/react/dist/JSXTransformer.js"></script>
+		<script src="{{base_path}}node_modules/director/build/director.js"></script>
+
+		<script src="{{base_path}}js/utils.js"></script>
+		<script src="{{base_path}}js/todoModel.js"></script>
+		<!-- jsx is an optional syntactic sugar that transforms methods in React's
+		`render` into an HTML-looking format. Since the two models above are
+		unrelated to React, we didn't need those transforms. -->
+		<script type="text/jsx" src="{{base_path}}js/todoItem.jsx"></script>
+		<script type="text/jsx" src="{{base_path}}js/footer.jsx"></script>
+		<script type="text/jsx" src="{{base_path}}js/app.jsx"></script>
+	</body>
+</html>
